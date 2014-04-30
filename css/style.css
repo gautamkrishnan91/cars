@@ -202,19 +202,23 @@ body{
 }
 .stationary-car .middle{
 	width: 170px;
-	height: 152px;
+	height: 156px;
 	right: 20px;
 	top: 124px;
 	background: #FEB43F;
 	position: absolute;
-	border-bottom-left-radius: 9px 102px;
-	border-bottom-right-radius: 9px 102px;
+	border-bottom-left-radius: 6px 102px;
+	border-bottom-right-radius: 6px 102px;
 	border-top-left-radius: 10px 102px;
 	border-top-right-radius: 10px 102px;
 	-webkit-border-top-left-radius: 10px 102px;
-	-webkit-border-bottom-left-radius: 9px 102px;
+	-webkit-border-bottom-left-radius: 6px 102px;
 	-webkit-border-top-right-radius: 10px 102px;
-	-webkit-border-bottom-right-radius: 9px 102px;
+	-webkit-border-bottom-right-radius: 6px 102px;
+	-moz-border-radius-topleft: 10px 102px;
+	-moz-border-radius-bottomleft: 6px 102px;
+	-moz-border-radius-topright: 10px 102px;
+	-moz-border-radius-bottomright: 6px 102px;
 }
 .stationary-car .mirror{
 	width: 29px;
@@ -345,4 +349,69 @@ body{
 	z-index: 14;
 }
 .stationary-car .rear-window:after{
+	content: "";
+	margin-top: -22px;
+	width: 114px;
+	height: 36px;
+	background: #1F1A17;
+	position: absolute;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	margin-left: 0px;
+	z-index: 14;
+}
+.stationary-car .tail-light{
+	width: 30px;
+	height: 10px;
+	background: #DA251D;
+	position: absolute;
+	bottom: 23px;
+	z-index: 14;
+	-webkit-transform: rotate(38deg);
+	-moz-transform: rotate(38deg);
+	transform: rotate(38deg);
+	left: 31px;
+	border-radius: 50%;
+}
+.stationary-car .tail-light:after{
+	content: "";
+	width: 30px;
+	height: 10px;
+	background: #DA251D;
+	position: absolute;
+	z-index: 14;
+	-webkit-transform: rotate(-76deg);
+	-moz-transform: rotate(-76deg);
+	transform: rotate(-76deg);
+	left: 93px;
+	border-radius: 50%;
+	top: -74px;
+}
+.stationary-car .head-light{
+	width: 30px;
+	height: 10px;
+	background: #1F1A17;
+	position: absolute;
+	top: 29px;
+	z-index: 14;
+	-webkit-transform: rotate(-38deg);
+	-moz-transform: rotate(-38deg);
+	transform: rotate(-38deg);
+	left: 27px;
+	border-radius: 50%;
+}
+.stationary-car .head-light:after{
+	content: "";
+	width: 30px;
+	height: 10px;
+	background: #1F1A17;
+	position: absolute;
+	z-index: 14;
+	-webkit-transform: rotate(-102deg);
+	-moz-transform: rotate(-102deg);
+	transform: rotate(-102deg);
+	left: 100px;
+	border-radius: 50%;
+	top: 76px;
 }
